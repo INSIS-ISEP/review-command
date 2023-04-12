@@ -57,15 +57,6 @@ class ReviewController {
         return ResponseEntity.ok().body(rev);
     }
 
-    @Operation(summary = "gets pedding reviews")
-    @GetMapping("/reviews/pending")
-    public ResponseEntity<List<ReviewDTO>> getPendingReview(){
-
-        List<Review> r = rService.findPendingReview();
-        List<ReviewDTO> rDTO = r.stream().map(ReviewMapper::toDto).collect(Collectors.toList());
-        return ResponseEntity.ok().body(rDTO);
-    }
-
     @Operation(summary = "Accept or reject review")
     @PutMapping("/reviews/acceptreject/{reviewID}")
     public ResponseEntity<ReviewDTO> putAcceptRejectReview(@PathVariable(value = "reviewID") final Long reviewID, @RequestBody String approved){

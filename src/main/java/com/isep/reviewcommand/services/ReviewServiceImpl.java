@@ -46,16 +46,6 @@ public class ReviewServiceImpl implements ReviewService {
     }
 
     @Override
-    public List<Review> findPendingReview(){
-        Optional<List<Review>> r = repository.findPendingReviews();
-
-        if(r.isEmpty()){
-            return null;
-        }
-        return r.get();
-    }
-
-    @Override
     public Review moderateReview(Long reviewID, String approved) throws ResourceNotFoundException, IllegalArgumentException {
 
         Optional<Review> r = repository.findById(reviewID);

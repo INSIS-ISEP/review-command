@@ -10,9 +10,7 @@ public interface ReviewService {
     Review create(Review review, Product product);
 
     boolean DeleteReview(Long reviewId);
-
-    List<Review> findPendingReview();
-
+    
     Review moderateReview(Long reviewID, String approved);
 
     // List<ReviewDTO> findReviewsByUser(Long userID);
