@@ -1,0 +1,4 @@
+Uri: jdt://contents/spring-data-commons-2.7.10.jar/org.springframework.data.repository/CrudRepository.class?%3Dreviewcommand%2F%5C%2Fhome%5C%2Frainanaraujo%5C%2F.m2%5C%2Frepository%5C%2Forg%5C%2Fspringframework%5C%2Fdata%5C%2Fspring-data-commons%5C%2F2.7.10%5C%2Fspring-data-commons-2.7.10.jar%3D%2Fmaven.pomderived%3D%2Ftrue%3D%2F%3D%2Fmaven.groupId%3D%2Forg.springframework.data%3D%2F%3D%2Fmaven.artifactId%3D%2Fspring-data-commons%3D%2F%3D%2Fmaven.version%3D%2F2.7.10%3D%2F%3D%2Fmaven.scope%3D%2Fcompile%3D%2F%3D%2Fmaven.pomderived%3D%2Ftrue%3D%2F%3Corg.springframework.data.repository%28CrudRepository.class
+
+Error message: Provider "jdt" not installed
+Error: java.nio.file.FileSystemNotFoundException: Provider "jdt" not installed

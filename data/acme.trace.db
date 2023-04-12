@@ -1,0 +1,655 @@
+2023-04-12 19:08:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 19:08:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255) not null, publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, [*]user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review))"; expected "identifier"; SQL statement:
+create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255) not null, publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review)) [42001-214]
+2023-04-12 19:08:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id)) [42001-214]
+2023-04-12 19:08:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif) [42001-214]
+2023-04-12 19:08:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username) [42001-214]
+2023-04-12 19:08:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REVIEW" not found; SQL statement:
+alter table review add constraint FKiyof1sindb9qiqr9o8npj8klt foreign key (product_id) references product [42102-214]
+2023-04-12 19:08:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references user [42001-214]
+2023-04-12 19:10:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 19:15:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 19:15:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255) not null, publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, [*]user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review))"; expected "identifier"; SQL statement:
+create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255) not null, publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review)) [42001-214]
+2023-04-12 19:15:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id)) [42001-214]
+2023-04-12 19:15:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif) [42001-214]
+2023-04-12 19:15:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username) [42001-214]
+2023-04-12 19:15:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REVIEW" not found; SQL statement:
+alter table review add constraint FKiyof1sindb9qiqr9o8npj8klt foreign key (product_id) references product [42102-214]
+2023-04-12 19:15:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references user [42001-214]
+2023-04-12 19:16:08 database: wrong user or password; user: "SA"
+org.h2.message.DbException: Wrong user name or password [28000-214]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:288)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:808)
+	at org.h2.server.web.WebApp.login(WebApp.java:1033)
+	at org.h2.server.web.WebApp.process(WebApp.java:226)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:528)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:337)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter.doFilterInternal(BearerTokenAuthenticationFilter.java:125)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:510)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 100 more
+2023-04-12 19:16:44 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]PRODUCTID"; expected "PREPARE"; SQL statement:
+PRODUCTID [42001-214]
+2023-04-12 19:17:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select review0_.id_review as id_revie1_1_, review0_.approval_status as approval2_1_, review0_.fun_fact as fun_fact3_1_, review0_.product_id as product10_1_, review0_.publishing_date as publishi4_1_, review0_.rate as rate5_1_, review0_.report as report6_1_, review0_.review_text as review_t7_1_, review0_.[*]user as user8_1_, review0_.version as version9_1_ from review review0_ where review0_.approval_status='pending'"; expected "identifier"; SQL statement:
+select review0_.id_review as id_revie1_1_, review0_.approval_status as approval2_1_, review0_.fun_fact as fun_fact3_1_, review0_.product_id as product10_1_, review0_.publishing_date as publishi4_1_, review0_.rate as rate5_1_, review0_.report as report6_1_, review0_.review_text as review_t7_1_, review0_.user as user8_1_, review0_.version as version9_1_ from review review0_ where review0_.approval_status='pending' [42001-214]
+2023-04-12 19:20:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 19:21:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 19:21:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255) not null, publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, [*]user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review))"; expected "identifier"; SQL statement:
+create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255) not null, publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review)) [42001-214]
+2023-04-12 19:21:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id)) [42001-214]
+2023-04-12 19:21:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif) [42001-214]
+2023-04-12 19:21:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username) [42001-214]
+2023-04-12 19:21:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REVIEW" not found; SQL statement:
+alter table review add constraint FKiyof1sindb9qiqr9o8npj8klt foreign key (product_id) references product [42102-214]
+2023-04-12 19:21:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references user [42001-214]
+2023-04-12 19:22:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 19:22:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 19:22:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255) not null, publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, [*]user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review))"; expected "identifier"; SQL statement:
+create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255) not null, publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review)) [42001-214]
+2023-04-12 19:22:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id)) [42001-214]
+2023-04-12 19:22:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif) [42001-214]
+2023-04-12 19:22:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username) [42001-214]
+2023-04-12 19:22:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REVIEW" not found; SQL statement:
+alter table review add constraint FKiyof1sindb9qiqr9o8npj8klt foreign key (product_id) references product [42102-214]
+2023-04-12 19:22:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references user [42001-214]
+2023-04-12 19:26:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 19:26:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 19:26:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255) not null, publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, [*]user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review))"; expected "identifier"; SQL statement:
+create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255) not null, publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review)) [42001-214]
+2023-04-12 19:26:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id)) [42001-214]
+2023-04-12 19:26:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif) [42001-214]
+2023-04-12 19:26:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username) [42001-214]
+2023-04-12 19:26:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REVIEW" not found; SQL statement:
+alter table review add constraint FKiyof1sindb9qiqr9o8npj8klt foreign key (product_id) references product [42102-214]
+2023-04-12 19:26:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references user [42001-214]
+2023-04-12 19:27:40 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'asdf' (PRODUCT: ""PRODUCTID"" BIGINT NOT NULL)"; SQL statement:
+INSERT INTO "PUBLIC"."PRODUCT"("PRODUCTID","DESCRIPTION","DESIGNATION","SKU")VALUES(?,?,?,?) [22018-214]
+2023-04-12 19:27:40 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'asdf' (PRODUCT: ""PRODUCTID"" BIGINT NOT NULL)"; SQL statement:
+INSERT INTO "PUBLIC"."PRODUCT"("PRODUCTID","DESCRIPTION","DESIGNATION","SKU")VALUES(?,?,?,?) [22018-214]
+2023-04-12 19:28:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 19:29:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 19:29:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255) not null, publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, [*]user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review))"; expected "identifier"; SQL statement:
+create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255) not null, publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review)) [42001-214]
+2023-04-12 19:29:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id)) [42001-214]
+2023-04-12 19:29:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif) [42001-214]
+2023-04-12 19:29:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username) [42001-214]
+2023-04-12 19:29:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REVIEW" not found; SQL statement:
+alter table review add constraint FKiyof1sindb9qiqr9o8npj8klt foreign key (product_id) references product [42102-214]
+2023-04-12 19:29:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references user [42001-214]
+2023-04-12 19:30:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 19:31:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 19:31:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255), publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, [*]user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review))"; expected "identifier"; SQL statement:
+create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255), publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review)) [42001-214]
+2023-04-12 19:31:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id)) [42001-214]
+2023-04-12 19:31:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif) [42001-214]
+2023-04-12 19:31:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username) [42001-214]
+2023-04-12 19:31:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REVIEW" not found; SQL statement:
+alter table review add constraint FKiyof1sindb9qiqr9o8npj8klt foreign key (product_id) references product [42102-214]
+2023-04-12 19:31:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references user [42001-214]
+2023-04-12 19:40:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 19:40:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 19:40:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255) not null, publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, [*]user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review))"; expected "identifier"; SQL statement:
+create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255) not null, publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review)) [42001-214]
+2023-04-12 19:40:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id)) [42001-214]
+2023-04-12 19:40:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif) [42001-214]
+2023-04-12 19:40:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username) [42001-214]
+2023-04-12 19:40:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REVIEW" not found; SQL statement:
+alter table review add constraint FKiyof1sindb9qiqr9o8npj8klt foreign key (product_id) references product [42102-214]
+2023-04-12 19:40:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references user [42001-214]
+2023-04-12 19:52:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 19:52:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 19:52:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255) not null, publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, [*]user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review))"; expected "identifier"; SQL statement:
+create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255) not null, publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review)) [42001-214]
+2023-04-12 19:52:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id)) [42001-214]
+2023-04-12 19:52:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif) [42001-214]
+2023-04-12 19:52:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username) [42001-214]
+2023-04-12 19:52:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REVIEW" not found; SQL statement:
+alter table review add constraint FKiyof1sindb9qiqr9o8npj8klt foreign key (product_id) references product [42102-214]
+2023-04-12 19:52:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references user [42001-214]
+2023-04-12 19:55:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 19:55:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 19:55:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255) not null, publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, [*]user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review))"; expected "identifier"; SQL statement:
+create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255) not null, publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review)) [42001-214]
+2023-04-12 19:55:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id)) [42001-214]
+2023-04-12 19:55:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif) [42001-214]
+2023-04-12 19:55:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username) [42001-214]
+2023-04-12 19:55:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REVIEW" not found; SQL statement:
+alter table review add constraint FKiyof1sindb9qiqr9o8npj8klt foreign key (product_id) references product [42102-214]
+2023-04-12 19:55:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references user [42001-214]
+2023-04-12 19:56:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REVIEW" not found; SQL statement:
+insert into review (approval_status, fun_fact, product_id, publishing_date, rate, report, review_text, user, version, id_review) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42102-214]
+2023-04-12 20:11:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 20:11:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255) not null, publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, [*]user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review))"; expected "identifier"; SQL statement:
+create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255) not null, publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review)) [42001-214]
+2023-04-12 20:11:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id)) [42001-214]
+2023-04-12 20:11:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif) [42001-214]
+2023-04-12 20:11:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username) [42001-214]
+2023-04-12 20:11:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REVIEW" not found; SQL statement:
+alter table review add constraint FKiyof1sindb9qiqr9o8npj8klt foreign key (product_id) references product [42102-214]
+2023-04-12 20:11:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references user [42001-214]
+2023-04-12 20:12:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REVIEW" not found; SQL statement:
+insert into review (approval_status, fun_fact, product_id, publishing_date, rate, report, review_text, user, version, id_review) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42102-214]
+2023-04-12 20:13:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 20:13:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 20:13:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255) not null, publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, [*]user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review))"; expected "identifier"; SQL statement:
+create table review (id_review bigint not null, approval_status varchar(255) not null, fun_fact varchar(255) not null, publishing_date date not null, rate double not null, report varchar(255), review_text varchar(255) not null, user varchar(255) not null, version bigint not null, product_id bigint not null, primary key (id_review)) [42001-214]
+2023-04-12 20:13:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id)) [42001-214]
+2023-04-12 20:13:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif) [42001-214]
+2023-04-12 20:13:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username) [42001-214]
+2023-04-12 20:13:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REVIEW" not found; SQL statement:
+alter table review add constraint FKiyof1sindb9qiqr9o8npj8klt foreign key (product_id) references product [42102-214]
+2023-04-12 20:13:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references user [42001-214]
+2023-04-12 20:14:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REVIEW" not found; SQL statement:
+insert into review (approval_status, fun_fact, product_id, publishing_date, rate, report, review_text, user, version, id_review) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42102-214]
+2023-04-12 20:15:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "APPROVAL_STATUS" not found; SQL statement:
+insert into review (approval_status, fun_fact, product_id, publishing_date, rate, report, review_text, user, version, id_review) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$1.doPrepare(StatementPreparerImpl.java:90)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:176)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareStatement(StatementPreparerImpl.java:81)
+	at org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl.buildBatchStatement(AbstractBatchImpl.java:142)
+	at org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl.getBatchStatement(AbstractBatchImpl.java:131)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3356)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3937)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:107)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1407)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:489)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3303)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2438)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy143.save(Unknown Source)
+	at com.isep.reviewcommand.services.ReviewServiceImpl.create(ReviewServiceImpl.java:34)
+	at com.isep.reviewcommand.controllers.ReviewController.createReview(ReviewController.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:528)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:337)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter.doFilterInternal(BearerTokenAuthenticationFilter.java:125)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023-04-12 20:18:38 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE review (\000d\000a  id_review INT NOT NULL,\000d\000a  approval_status VARCHAR(50),\000d\000a  fun_fact VARCHAR(255),\000d\000a  product_id INT,\000d\000a  publishing_date DATE,\000d\000a  rate DECIMAL(3,2),\000d\000a  report VARCHAR(255),\000d\000a  review_text VARCHAR(1000),\000d\000a  [*]user VARCHAR(50),\000d\000a  version INT,\000d\000a  PRIMARY KEY (id_review)\000d\000a)"; expected "identifier"; SQL statement:
+CREATE TABLE review (
+  id_review INT NOT NULL,
+  approval_status VARCHAR(50),
+  fun_fact VARCHAR(255),
+  product_id INT,
+  publishing_date DATE,
+  rate DECIMAL(3,2),
+  report VARCHAR(255),
+  review_text VARCHAR(1000),
+  user VARCHAR(50),
+  version INT,
+  PRIMARY KEY (id_review)
+) [42001-214]
+2023-04-12 20:20:51 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE review (\000d\000a  id_review INT PRIMARY KEY,\000d\000a  approval_status VARCHAR(50),\000d\000a  fun_fact VARCHAR(255),\000d\000a  product_id INT,\000d\000a  publishing_date DATE,\000d\000a  rate DECIMAL(3,2),\000d\000a  report VARCHAR(255),\000d\000a  review_text VARCHAR(1000),\000d\000a  [*]user VARCHAR(50),\000d\000a  version INT\000d\000a)"; expected "identifier"; SQL statement:
+CREATE TABLE review (
+  id_review INT PRIMARY KEY,
+  approval_status VARCHAR(50),
+  fun_fact VARCHAR(255),
+  product_id INT,
+  publishing_date DATE,
+  rate DECIMAL(3,2),
+  report VARCHAR(255),
+  review_text VARCHAR(1000),
+  user VARCHAR(50),
+  version INT
+) [42001-214]
+2023-04-12 20:21:28 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE review (id_review INT PRIMARY KEY, approval_status VARCHAR(50), fun_fact VARCHAR(255), product_id INT, publishing_date DATE, rate DECIMAL(3,2), report VARCHAR(255), review_text VARCHAR(1000), [*]user VARCHAR(50), version INT)"; expected "identifier"; SQL statement:
+CREATE TABLE review (id_review INT PRIMARY KEY, approval_status VARCHAR(50), fun_fact VARCHAR(255), product_id INT, publishing_date DATE, rate DECIMAL(3,2), report VARCHAR(255), review_text VARCHAR(1000), user VARCHAR(50), version INT) [42001-214]
+2023-04-12 20:22:18 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE REVIEW (id_review INT PRIMARY KEY, approval_status VARCHAR(50), fun_fact VARCHAR(255), product_id INT, publishing_date DATE, rate DECIMAL(3,2), report VARCHAR(255), review_text VARCHAR(1000), [*]user VARCHAR(50), version INT)"; expected "identifier"; SQL statement:
+CREATE TABLE REVIEW (id_review INT PRIMARY KEY, approval_status VARCHAR(50), fun_fact VARCHAR(255), product_id INT, publishing_date DATE, rate DECIMAL(3,2), report VARCHAR(255), review_text VARCHAR(1000), user VARCHAR(50), version INT) [42001-214]
+2023-04-12 20:25:25 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE REVIEW (id_review INT NOT NULL, approval_status VARCHAR(50), fun_fact VARCHAR(255), product_id INT, publishing_date DATE, rate DECIMAL(3,2), report VARCHAR(255), review_text VARCHAR(1000), [*]user VARCHAR(50), version INT)"; expected "identifier"; SQL statement:
+CREATE TABLE REVIEW (id_review INT NOT NULL, approval_status VARCHAR(50), fun_fact VARCHAR(255), product_id INT, publishing_date DATE, rate DECIMAL(3,2), report VARCHAR(255), review_text VARCHAR(1000), user VARCHAR(50), version INT) [42001-214]
+2023-04-12 20:26:32 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE REVIEW (id_review INT NOT NULL, approval_status VARCHAR(50), fun_fact VARCHAR(255), product_id INT, publishing_date DATE, rate DOUBLE, report VARCHAR(255), review_text VARCHAR(1000), [*]user VARCHAR(50), version INT)"; expected "identifier"; SQL statement:
+CREATE TABLE REVIEW (id_review INT NOT NULL, approval_status VARCHAR(50), fun_fact VARCHAR(255), product_id INT, publishing_date DATE, rate DOUBLE, report VARCHAR(255), review_text VARCHAR(1000), user VARCHAR(50), version INT) [42001-214]
+2023-04-12 20:28:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "insert into review (approval_status, fun_fact, product_id, publishing_date, rate, report, review_text, [*]user, version, id_review) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "identifier"; SQL statement:
+insert into review (approval_status, fun_fact, product_id, publishing_date, rate, report, review_text, user, version, id_review) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-214]
+2023-04-12 20:28:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 20:28:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 20:28:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id)) [42001-214]
+2023-04-12 20:28:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif) [42001-214]
+2023-04-12 20:28:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username) [42001-214]
+2023-04-12 20:28:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references user [42001-214]
+2023-04-12 20:29:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 20:29:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
+2023-04-12 20:29:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, full_name varchar(255), morada varchar(255) not null, nif varchar(255) not null, password varchar(255), username varchar(255), primary key (user_id)) [42001-214]
+2023-04-12 20:29:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_b6kswwe6mvuib7igqh5amuk2o unique (nif) [42001-214]
+2023-04-12 20:29:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table [*]user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username)"; expected "identifier"; SQL statement:
+alter table user add constraint UK_sb8bbouer5wak8vyiiy4pf2bx unique (username) [42001-214]
+2023-04-12 20:29:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references [*]user"; expected "identifier"; SQL statement:
+alter table user_authorities add constraint FK11ligtvfguv4f90k7qym2qlq1 foreign key (user_user_id) references user [42001-214]
+2023-04-12 20:32:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "drop table if exists [*]user CASCADE "; expected "identifier"; SQL statement:
+drop table if exists user CASCADE  [42001-214]
